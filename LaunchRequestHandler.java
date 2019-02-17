@@ -17,6 +17,7 @@ public class LaunchRequestHandler implements RequestHandler {
     }
 
 //    @Override
+//  Don't know who written this but THAT is awesome 
     public Optional<Response> handle(HandlerInput input) {
         String speechText = "Welcome to the Alexa Skills Kit, you can say shalom";
         return input.getResponseBuilder()
