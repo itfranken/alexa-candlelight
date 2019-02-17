@@ -16,9 +16,10 @@ public class LaunchRequestHandler implements RequestHandler {
         return input.matches(requestType(LaunchRequest.class));
     }
 
-//    @Override
+//	@Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "Welcome to the Alexa CandleLight, you can say shalom";
+        String speechText = "Welcome to the Alexa CandleLight, " + 
+        					"you can say shalom and ask details about Shabbat";
         return input.getResponseBuilder()
                 .withSpeech(speechText)
                 .withSimpleCard("HelloWorld", speechText)
