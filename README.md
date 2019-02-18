@@ -1,9 +1,8 @@
 # Teach Alexa the Candlelightning times
 
 ## Set UP
-* install eclipse with java 8 environment
-* import this git repo as Maven repository
-* run maven build on pom.xml
+* install eclipse with *java 8* environment
+* import this git repo via eclipse Workbench
 
 Right now the project tree is supposed to be without any errors 
 
@@ -14,9 +13,9 @@ Right now the project tree is supposed to be without any errors
 * wrtiting unittest for the Helper class
 
 * create three Handlers
-** one for this weeks Parasha
-** one for candlelight times
-** one for havdala / shabbat end times
+  * one for this weeks Parasha
+  * one for candlelight times
+  * one for havdala / shabbat end times
 
 * wrtiting unittest for the Handlers
 
