@@ -1,16 +1,16 @@
-package com.ithub.AWSLamdbaSayShalomStreamer;
+package invocation;
 
 import com.amazon.ask.Skill;
 import com.amazon.ask.Skills;
 import com.amazon.ask.SkillStreamHandler;
-import com.ithub.AlexaSayShalomHandlers.CancelandStopIntentHandler;
-import com.ithub.AlexaSayShalomHandlers.FallbackIntentHandler;
-import com.ithub.AlexaSayShalomHandlers.HelloWorldIntentHandler;
-import com.ithub.AlexaSayShalomHandlers.HelpIntentHandler;
-import com.ithub.AlexaSayShalomHandlers.LaunchRequestHandler;
-import com.ithub.AlexaSayShalomHandlers.SessionEndedRequestHandler;
+import handlers.CancelandStopIntentHandler;
+import handlers.HelloWorldIntentHandler;
+import handlers.FallbackIntentHandler;
+import handlers.HelpIntentHandler;
+import handlers.LaunchRequestHandler;
+import handlers.SessionEndedRequestHandler;
 
-public class SayShalomStreamHandler extends SkillStreamHandler {
+public class CandleStreamHandler extends SkillStreamHandler {
 
     private static Skill getSkill() {
         return Skills.standard()
@@ -26,7 +26,7 @@ public class SayShalomStreamHandler extends SkillStreamHandler {
                 .build();
     }
 
-    public SayShalomStreamHandler() {
+    public CandleStreamHandler() {
 		super(getSkill());
     }
 

@@ -1,4 +1,4 @@
-package com.ithub.AlexaSayShalomHandlers;
+package handlers;
 
 import com.amazon.ask.dispatcher.request.handler.HandlerInput;
 import com.amazon.ask.dispatcher.request.handler.RequestHandler;
@@ -8,20 +8,20 @@ import java.util.Optional;
 
 import static com.amazon.ask.request.Predicates.intentName;
 
-public class HelpIntentHandler implements RequestHandler {
+public class HelloWorldIntentHandler implements RequestHandler {
 
 //    @Override
     public boolean canHandle(HandlerInput input) {
-        return input.matches(intentName("AMAZON.HelpIntent"));
+        return input.matches(intentName("HelloWorldIntent"));
     }
 
 //    @Override
     public Optional<Response> handle(HandlerInput input) {
-        String speechText = "You can say shalom to me!";
-        return input.getResponseBuilder()
+        String speechText = "Shalom world";
+       return input.getResponseBuilder()
                 .withSpeech(speechText)
                 .withSimpleCard("HelloWorld", speechText)
-                .withReprompt(speechText)
                 .build();
     }
+
 }
