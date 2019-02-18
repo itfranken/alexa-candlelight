@@ -23,5 +23,6 @@ Right now the project tree is supposed to be without any errors
 * edit the `model.json` file by adding the three new intents (parasha, candlelight, havdala)
 
 ### Step 3
-* upload jar to Lambda and view results.
+* upload jar to Lambda 
+* ulpoad models to alexa devloper skill
 * if everything working as expected, repeat step one with geonameid based on alexa device location
